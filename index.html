@@ -57,7 +57,9 @@
 
      <!-- Flash Sale Section -->
   <div class="flash-sale">
-    <h2 class="flash-sale-title">Flash Sale</h2>
+    <h2 class="flash-sale-title" id="flash-sale-id">Flash Sale
+      
+    </h2>
     
     <div class="flash-sale-header">
       <div class="sale-status">
@@ -73,10 +75,10 @@
           </div>
         </div>
       </div>
-      <a href="#" class="shop-all-products">SHOP ALL PRODUCTS</a>
+      <button onclick="addProduct()" href="#" class="shop-all-products">ADD PRODUCTS</button>
     </div>
     
-    <div class="product-grid">
+    <div class="product-grid" id="grid-product">
       <!-- Product 1 -->
       <div class="product-card">
         <img src="./image/01.avif" alt="Shell Engine Oil" class="product-image">
@@ -183,7 +185,6 @@
       </div>
     </div>
     </div>
-
-
+    <script src="./scripts/script.js" ></script>
 </body>
 </html>

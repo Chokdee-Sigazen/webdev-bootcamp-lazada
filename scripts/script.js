@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded',function(){
-    alert("Hello JS is working now")
+
 })
 
-
+let count = 11;
 
 function addProduct() {
-    const newElement  = document.createElement('div')
+    
+    const newElement  = document.createElement('div');
     newElement.innerHTML = `
         <div class="product-card">
             <img src="./image/06.avif" alt="NIVEA Roll On" class="product-image">
@@ -15,11 +16,15 @@ function addProduct() {
                 <p class="original-price">฿218.00 <span class="discount">-28%</span></p>
             </div>
         </div>
-        `
+        `;
 
-    const product_grid = document.getElementById('grid-product')
-    product_grid.appendChild(newElement)
+    const product_grid = document.getElementById('grid-product');
+    product_grid.appendChild(newElement);
 
-    console.log("Test")
+    console.log("Add product number",count)
+
+    count += 1;
+    const falsh_sale = document.getElementById('flash-sale-id')
+    falsh_sale.innerText = `Flash Sale (${count})`
     
 }
